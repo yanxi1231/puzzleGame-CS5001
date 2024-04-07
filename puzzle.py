@@ -207,9 +207,11 @@ class Puzzle:
         Return: 
             None  
         """ 
+        ### end click??????
         # check if beats the current record
         record.check(self.move)
         record.writeRecord()
+        record.t_record.clear()
         record.display()
 
         # pop win msg
